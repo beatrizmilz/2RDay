@@ -1,6 +1,6 @@
 ---
-title: "<center><img src= 'img/allisonhorst/community1.jpg' width = '35%' alt='Author: Allison Horst'></br><p>Imagem por <a href='https://twitter.com/allison_horst' target=_blank>@allison_horst</a></p></center> "
-subtitle: "A importância das Comunidades ... R"
+title: "<center><img src= 'img/allisonhorst/community1.jpg' width = '30%' alt='Author: Allison Horst'></br><p>Imagem por <a href='https://twitter.com/allison_horst' target=_blank>@allison_horst</a></p></center> "
+subtitle: "R-Ladies, Comunidades R e a importância das iniciativas de diversidade"
 author: "Beatriz Milz<br> 2º R Day · UFPR · Curitiba · Paraná </br> 13/12/2019"
 output:
   xaringan::moon_reader:
@@ -20,6 +20,10 @@ Twitter: twitter.com/BeaMilz | beatriz.milz@usp.br | Apresentação em: bit.ly/.
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
+
+knitr::opts_chunk$set(echo = FALSE, fig.align = "center", message=FALSE, warning=FALSE)
+
+library(tidyverse)
 ```
 
 ---
@@ -41,6 +45,229 @@ knitr::include_graphics("img/logos_bia.png")
 
 - Anteriormente: Mestre em Ciências - UNIFESP; Bacharel em Gestão Ambiental - EACH/USP
 
+---
+class:  center, middle
+
+## O que é o R-Ladies?
+
+R-Ladies é uma organização mundial que promove a diversidade de gênero na comunidade da linguagem R.
+R-Ladies São Paulo integra, orgulhosamente, a organização R-Ladies Global, em São Paulo.
+
+## Como?
+
+Através de meetups e mentorias em um ambiente seguro e amigável.
+
+Nosso principal objetivo é promover a linguagem computacional estatística R compartilhando conhecimento, assim, quem tiver interesse na linguagem será bem-vinda, independente do nível de conhecimento. 
+
+
+Fonte: [About us - R-Ladies](https://rladies.org/about-us/), [Meetup R-Ladies São Paulo](https://www.meetup.com/R-Ladies-Sao-Paulo/)
+
+---
+class:   center, middle
+## Para quem?
+
+Nosso principal público-alvo são as pessoas que se identificam com o gênero feminino, portanto, mulheres cis, mulheres trans, bem como pessoas não-binárias e queer.
+
+## Missão
+
+Como uma iniciativa de diversidade, a missão das R-Ladies é alcançar uma representação proporcional de pessoas de gêneros atualmente sub-representados na comunidade R, incentivando, inspirando e caacitando-as.
+
+
+
+Fonte: [About us - R-Ladies](https://rladies.org/about-us/), [Meetup R-Ladies São Paulo](https://www.meetup.com/R-Ladies-Sao-Paulo/)
+
+---
+class:   center, middle
+## Como o R-Ladies começou?
+```{r echo=FALSE, fig.align='center', out.width="20%"}
+knitr::include_graphics("https://raw.githubusercontent.com/beatrizmilz/IV-SER-RLadies/master/docs/img/gabriela.jpeg")
+```
+
+
+**[Gabriela de Queiroz](https://github.com/gdequeiroz)** fundou o R-Ladies no dia **1 de outubro de 2012**. Ela queria retribuir à comunidade depois de ir a vários encontros e aprender muito de graça. O primeiro encontro R-Ladies foi realizado em ** San Francisco, Califórnia (Estados Unidos) **. Nos anos seguintes, mais capítulos do R-Ladies começaram em todo o mundo.
+
+Fonte: [About us - R-Ladies](https://rladies.org/about-us/history/)
+
+---
+class:   center, middle
+## Crescimento da R-Ladies no mundo
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/cumulative-growth-of-chapters.png")
+```
+
+Atualizado em: Dezembro/2019. Fonte: [R Community Explorer](https://benubah.github.io/r-community-explorer/rladies.html) 
+---
+class:center, middle
+
+## Comunidade da R-Ladies - Capítulos no mundo
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/r-ladies-community.PNG")
+```
+
+Atualizado em: Dezembro/2019. Fonte: [R Community Explorer](https://benubah.github.io/r-community-explorer/rladies.html) 
+
+---
+class:   center, middle
+
+## Código de conduta
+O R-Ladies dedica-se a proporcionar uma experiência livre de assédio para todas as pessoas partcicipantes, desta forma, não é tolerada nenhuma forma de assédio.
+[Código de conduta - R-Ladies](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese)
+
+
+
+---
+class: middle
+
+## R-Ladies no Brasil
+
+```{r eval=FALSE, include=FALSE}
+url <- "https://benubah.github.io/r-community-explorer/data/rladies.csv"
+download.file(url, "data/rladies.csv", method = "curl")
+```
+
+```{r}
+rladies <- readr::read_csv("data/rladies.csv")
+```
+
+Atualizado em: `r  format(Sys.time(), '%B de %Y')`. Fonte: [R Community Explorer](https://benubah.github.io/r-community-explorer/rladies.html) 
+
+
+
+```{r}
+library(knitr)
+library(kableExtra)
+```
+
+```{r echo=FALSE}
+rladies %>%
+  dplyr::arrange(desc(members)) %>%
+  dplyr::filter(country == "Brazil") %>%
+  dplyr::select(-X1,-city,-region,-fullurl,-country, -created) %>%
+  knitr::kable() %>%
+  kableExtra::kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = TRUE) %>%
+  kableExtra::scroll_box(width = "100%", height = "370px")
+```
+---
+class: middle
+
+## R-Ladies em São Paulo
+
+```{r out.width="50%"}
+knitr::include_graphics("img/1meetupsp.jpeg")
+```
+- **Primeiro encontro R-Ladies São Paulo ** - Agosto/2018
+
+- **~600 membros** - Dezembro/2019 
+
+---
+class: middle
+## Activities
+
+- Already held 10 events, including:
+  - meetups, 
+  - workshops, 
+  - datathons.
+
+
+```{r out.width="40%"}
+knitr::include_graphics("img/foto_loggi.jpeg")
+```
+
+**+meetings are monthly being planned!**
+
+---
+class: middle
+
+## Activities
+
+###Content - Focused on some packages:
+- Learning `dplyr`, `ggplot2`, `rmarkdown`
+- Dealing with strings with `stringr`
+- Presentations with `xaringan`
+- Functional Programming with `purrr`
+
+```{r out.width="14%", fig.align = "default"}
+knitr::include_graphics(c("img/rlogos/hex-tidyverse.jpg","img/rlogos/hex-dplyr.png","img/rlogos/hex-stringr.png", "img/rlogos/hex-ggplot2.png", "img/rlogos/hex-purrr.jpg", "img/rlogos/hex-rmarkdown.png", "img/rlogos/hex-xaringan.png"))
+```
+
+---
+class: middle
+
+## Activities
+
+###Content - Focused on case presentations:
+
+- Exploring Open Data
+- Google Analytics Data extraction
+- News article with electoral data
+- Economics and Transportation DataViz
+
+```{r out.width="100%"}
+knitr::include_graphics("img/Rplot-highchart.png")
+```
+
+
+---
+class: middle
+## Activities: partnership with other chapters
+
+- Workshop with R-Ladies Niterói (May/2019).
+
+```{r out.width="70%"}
+knitr::include_graphics("img/rladiesniteroi.jpeg")
+```
+---
+class: middle
+
+## Collaboration
+
+- We also collaborate with other projects:
+  - lectures, workshops,
+  - always open to the community.  
+
+
+---
+class: middle
+
+## Important points!
+
+- The group provides a safe environment for people interested in `R`. 
+   - Code of conduct: [https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese)
+
+- All of the content presented is made available freely on github in portuguese:
+
+   - [https://github.com/rladies/meetup-presentations_sao-paulo](https://github.com/rladies/meetup-presentations_sao-paulo)
+
+- **All of the activities are free to attend**
+
+  - The gratuity is very relevant in the Brazilian context:
+  the few `R` courses available in Portuguese are often expensive, and there is no other active `R` group in São Paulo (the biggest city in Brazil!) that provides this type of content free of charge.
+
+---
+class: middle
+## Conclusion
+
+- The increasing popularity of the R-Ladies São Paulo shows us how important it is to support it, 
+
+- It can be the key to motivate the creation of other chapters in Brazil, 
+
+- It helps to increase the strength of the Brazilian R community and the inclusion of underrepresented groups. 
+
+
+---
+class:   middle
+
+## Como saber mais?
+  - Website RLadies Global: [https://rladies.org/](https://rladies.org/)
+  - Twitter: [@RLadiesGlobal](https://twitter.com/rladiesglobal), [@RLadiesSaoPaulo](https://twitter.com/RLadiesSaoPaulo)
+  - Instagram: [@RLadiesSaoPaulo](http://instagram.com/RLadiesSaoPaulo)
+  - Facebook: [@RLadiesSaoPaulo](http://facebook.com/RLadiesSaoPaulo)
+  - MeetUp: [https://www.meetup.com/pt-BR/R-Ladies-Sao-Paulo](https://www.meetup.com/pt-BR/R-Ladies-Sao-Paulo)
+  - Github: [https://github.com/rladies/meetup-presentations_sao-paulo](https://github.com/rladies/meetup-presentations_sao-paulo)
+  - R-Ladies LATAM Blog (Latin America) - Em breve!
+### Não tem capítulo na sua cidade e quer iniciar um?
+<center> Saiba como em <a href="https://rladies.org/about-us/help/"> R-Ladies - How do get involved </a> </center>
 
 
 ---
