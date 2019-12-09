@@ -1,0 +1,198 @@
+---
+title: "<center><img src= 'img/allisonhorst/community1.jpg' width = '35%' alt='Author: Allison Horst'></br><p>Imagem por <a href='https://twitter.com/allison_horst' target=_blank>@allison_horst</a></p></center> "
+subtitle: "A importância das Comunidades ... R"
+author: "Beatriz Milz<br> 2º R Day · UFPR · Curitiba · Paraná </br> 13/12/2019"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: [default, "css/metropolis.css", "css/metropolis-fonts.css", "css/footer.css"]
+    includes:
+      after_body: insert-logo.html
+---
+layout: true
+  
+<div class="my-footer"><span>
+
+Twitter: twitter.com/BeaMilz | beatriz.milz@usp.br | Apresentação em: bit.ly/...
+
+
+</span></div> 
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+---
+class: middle  
+
+## Beatriz Milz
+
+- Doutoranda no Programa de Pós-Graduação em Ciência Ambiental (PROCAM) - Instituto de Energia e Ambiente - Universidade de São Paulo
+
+  - Bolsita FAPESP - Processo nº 2018/23771-6; Projeto Temático FAPESP Macroamb - Processo nº 2015/03804-9 
+  
+```{r echo=FALSE, out.width="50%", fig.align='center'}
+knitr::include_graphics("img/logos_bia.png")
+```
+
+- Equipe da Secretaria Executiva  Editorial - [Revista Ambiente & Sociedade](http://scielo.br/asoc)
+
+- Co-organizadora - [R-Ladies São Paulo](https://www.meetup.com/pt-BR/R-Ladies-Sao-Paulo) `r emo::ji("purple_heart")` e [satRday SP](https://saopaulo2019.satrdays.org/); Instrutora - [The Carpentries](https://carpentries.org/instructors/)
+
+- Anteriormente: Mestre em Ciências - UNIFESP; Bacharel em Gestão Ambiental - EACH/USP
+
+
+
+---
+class:  middle
+
+## The Carpentries 
+
+- Comunidade global que desenvolve e realiza workshops sobre habilidades de programação (principalmente ciência de dados).
+
+- Workshops desenvolvidos pela comunidade!
+
+- Workshops realizados por instrutores que recebem um treinamento e são certificados.
+
+- Tem um [Código de conduta](https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html), sempre sendo discutido e aprimorado!
+
+- Patrocinadores: [disponível aqui](https://carpentries.org/supporters/). Ex: RConsortium, RStudio, entre outros.
+
+---
+class:  middle
+
+## The Carpentries
+
+- **Visão**: Nossa visão é ser a **comunidade inclusiva** líder em ensino de dados e habilidades de programação.
+
+- **Missão**: A Carpentries desenvolve capacidade global em dados essenciais e habilidades computacionais para conduzir pesquisas eficientes, abertas e reproduzíveis. Treinamos e promovemos uma **comunidade ativa, inclusiva e diversificada** de alunos e instrutores que promove e modela a importância do software e dos dados na pesquisa. Colaboramos no desenvolvimento de lições abertas e entregamos essas lições usando práticas de ensino baseadas em evidências. Focamos nas pessoas que conduzem e apoiam pesquisas.
+
+Fonte: https://carpentries.org/about/
+
+---
+class:  middle
+
+# The Carpentries e R
+
+
+.pull-left[
+<br>
+```{r echo=FALSE, out.width="50%", fig.align='center'}
+knitr::include_graphics(c("img/dc.svg", "img/swc.svg", "img/lc.svg"))
+```
+
+- Workshops desenvolvidos pela comunidade!
+]
+
+.pull-right[
+
+
+- **Data Carpentry**
+
+- [Data Analysis and Visualization in R for Ecologists](https://datacarpentry.org/R-ecology-lesson/)
+
+- [Introduction to R for Geospatial Data](https://datacarpentry.org/r-intro-geospatial)
+
+- [Introduction to Geospatial Raster and Vector Data with R](https://datacarpentry.org/r-raster-vector-geospatial)
+
+- **Software Carpentry**
+
+- [Programming with R](http://swcarpentry.github.io/r-novice-inflammation)
+
+- [R for Reproducible Scientific Analysis](http://swcarpentry.github.io/r-novice-gapminder)
+
+- **Library Carpentry**
+
+- [Introduction to R](https://librarycarpentry.org/lc-r/)
+
+
+
+]
+
+---
+class:  middle
+
+# Instrutores - Mundo
+
+```{r echo=FALSE, out.width="80%", fig.align='center'}
+knitr::include_graphics("img/instrutores-mundo.PNG")
+```
+
+Fonte: https://carpentries.org/instructors-map/
+---
+class:  middle
+
+# Instrutores - Brasil
+
+```{r echo=FALSE, out.width="80%", fig.align='center'}
+knitr::include_graphics("img/instrutores-br.PNG")
+```
+
+Fonte: https://carpentries.org/instructors-map/
+
+---
+class:  middle
+
+## Treinamento de instrutores
+
+1. [Preencher o formulário de interesse](https://amy.carpentries.org/forms/request_training/)
+
+2. Receber email com o link para agendar o treinamento.
+
+3. Fazer o treinamento - 2 dias, online, em inglês.
+
+4. Checkout Process: 
+
+  4.1 Contribuir com um workshop, através do GitHub
+ 
+  4.2 Participar de uma discussão online (community discussion)
+  
+  4.3 Live coding demo de 5 minutos.
+
+
+- [Mais informações aqui](https://carpentries.github.io/instructor-training/)
+
+- Estou devendo um post sobre isso! Mas posso tirar dúvidas.
+
+---
+class: middle
+
+## Desafios para a comunidade brasileira
+
+
+- Treinamento de instrutores/as é em inglês
+
+- Poucos instrutores/instrutoras certificados
+
+- Material do workshop está em inglês 
+
+
+```{r eval=FALSE, include=FALSE}
++ Instrutores - + Workshops, + Equipe para traduzir, eventualmente equipe de treinamento de instrutores em português
+```
+
+
+
+---
+class: middle  
+
+# Agradecimentos
+
+```{r echo=FALSE, fig.align='center', out.width="40%"}
+knitr::include_graphics("https://media1.giphy.com/media/3oz8xIsloV7zOmt81G/giphy.gif")
+```
+
+- **Contato**:
+
+  - Email: <a href="mailto:beatriz.milz@usp.br">beatriz.milz@usp.br</a>
+  - Webpage: https://beatrizmilz.com
+  - Github: <a href="http://github.com/beatrizmilz">@beatrizmilz</a>
+  - Twitter: <a href="http://twitter.com/beatrizmilz">@BeaMilz</a> 
+  - Linkedin: <a href="https://www.linkedin.com/in/beatrizmilz">Beatriz Milz</a>
+
+
+- The Carpentries - [Website](https://carpentries.org/), [Twitter](https://twitter.com/thecarpentries), [Facebook](https://www.facebook.com/carpentries/), [LinkedIn](https://www.linkedin.com/company/the-carpentries/), [Slack](https://swc-slack-invite.herokuapp.com/)
+
+
+
+- Apresentação feita com [Xaringan](https://github.com/yihui/xaringan).
