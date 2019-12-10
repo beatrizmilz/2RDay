@@ -13,7 +13,7 @@ layout: true
   
 <div class="my-footer"><span>
 
-Twitter: <a href='https://twitter.com/BeaMilz'>@BeaMilz</a> | <a href='mailto:beatriz.milz@usp.br'>beatriz.milz@usp.br</a> | <a href='https://beatrizmilz.github.io/resume/resume.pdf'> Currículo </a> | Apresentação em: bit.ly/...
+Twitter: <a href='https://twitter.com/BeaMilz'>@BeaMilz</a> | <a href='mailto:beatriz.milz@usp.br'>beatriz.milz@usp.br</a> | <a href='https://beatrizmilz.github.io/resume/resume.pdf'> Currículo </a> | Apresentação em: <a href='http://bit.ly/milz2rday'> bit.ly/milz2rday </a>
 
 
 </span></div> 
@@ -438,6 +438,11 @@ class:
 - Material do workshop está em inglês 
 
 
+```{r echo=FALSE, out.width="40%", fig.align='center'}
+knitr::include_graphics("https://media0.giphy.com/media/QxZ0nbcVgMlPlnfZos/giphy-downsized.gif")
+```
+
+
 ```{r eval=FALSE, include=FALSE}
 + Instrutores - + Workshops, + Equipe para traduzir, eventualmente equipe de treinamento de instrutores em português
 ```
@@ -493,11 +498,27 @@ class:
 Saiba mais em: https://saopaulo2019.satrdays.org/codigodeconduta/
 
 ---
+class: 
+
+# satRday SP 2019   
+
+- Primeira edição: 30 de novembro de 2019
+- Ingresso: R$ 20,00 
+- **Diversidade**:
+  - Parte dos ingressos foram destinados à pessoas de grupos sub-representados na comunidade de R, e também para estudantes.
+  - Alguns ingressos foram sorteados gratuitamente para pessoas de grupos sub-representados.
+
+
+```{r echo=FALSE, out.width="45%", fig.align='center'}
+knitr::include_graphics("img/satrdayspfinal.jpg")
+```
+
+---
 class: center
 
-# Equipe organizadora 
+# satRday SP 2019  
 
-## satRday SP 2019
+## Equipe organizadora
 
 ```{r echo=FALSE, fig.align='default', out.width="16%"}
 knitr::include_graphics(c("img/team/adrianareis.jpg", 
@@ -523,7 +544,18 @@ knitr::include_graphics(c("img/team/adrianareis.jpg",
 
 
 
+---
+class:
 
+# Planos pós satRday SP 2019  
+
+- Evento em 2020
+
+- Continuar a buscar maior participação de grupos subrepresentados no evento!
+
+- Criação de um grupo novo: em andamento! 
+  - Foco na diversidade na comunidade de R
+  - 60 pessoas (10/12/2019)
 
 ---
 class: 
@@ -538,6 +570,13 @@ class:
 - Importância do código de conduta!
 
 
+---
+class:   
+```{r echo=FALSE, out.width="65%", fig.align='center'}
+knitr::include_graphics("img/allisonhorst/commuitysuport.jpg")
+```
+
+<center><p>Imagem por <a href='https://twitter.com/allison_horst' target=_blank>@allison_horst</a></p></center>
 ---
 class:   
 
