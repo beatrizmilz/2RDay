@@ -27,9 +27,9 @@ library(tidyverse)
 ```
 
 ---
-class: middle  
+class: 
 
-## Beatriz Milz
+# Beatriz Milz
 
 - Doutoranda no Programa de Pós-Graduação em Ciência Ambiental (PROCAM) - Instituto de Energia e Ambiente - Universidade de São Paulo
 
@@ -41,35 +41,49 @@ knitr::include_graphics("img/logos_bia.png")
 
 - Equipe da Secretaria Executiva  Editorial - [Revista Ambiente & Sociedade](http://scielo.br/asoc)
 
-- Co-organizadora - [R-Ladies São Paulo](https://www.meetup.com/pt-BR/R-Ladies-Sao-Paulo) `r emo::ji("purple_heart")` e [satRday SP](https://saopaulo2019.satrdays.org/); Instrutora - [The Carpentries](https://carpentries.org/instructors/)
+- Co-organizadora - [R-Ladies São Paulo](https://www.meetup.com/pt-BR/R-Ladies-Sao-Paulo) `r emo::ji("purple_heart")`
+
+- Co-organizadora [satRday SP](https://saopaulo2019.satrdays.org/)
+
+- Instrutora - [The Carpentries](https://carpentries.org/instructors/)
 
 - Anteriormente: Mestre em Ciências - UNIFESP; Bacharel em Gestão Ambiental - EACH/USP
 
 ---
-class: middle  
+class:   
 
-## 
+# Comunidades
 
-- Ponto de vista: contexto de São Paulo
-
-- Comunidades:
-
-  - R-Ladies
-
-  - The Carpentries
+## Ponto de vista: contexto de São Paulo
+<br> 
+```{r echo=FALSE, fig.align='default', out.width="33%"}
+knitr::include_graphics(c(
+  "img/rainbow.png",
+  "img/hex-carpentries.svg",
+  "img/satrdaysp.png"
+    
+  #"img/TheCarpentries.svg"
   
-  - satRday
-  
-  -  
-
-
+))
+```
 
 
 
 ---
-class:  center, middle
+class:  
 
-## O que é o R-Ladies?
+# R-Ladies
+
+
+```{r out.width="55%"}
+knitr::include_graphics("img/rainbow.png")
+```
+
+
+---
+class:  
+
+# O que é o R-Ladies?
 
 R-Ladies é uma organização mundial que promove a diversidade de gênero na comunidade da linguagem R.
 R-Ladies São Paulo integra, orgulhosamente, a organização R-Ladies Global, em São Paulo.
@@ -84,8 +98,8 @@ Nosso principal objetivo é promover a linguagem computacional estatística R co
 Fonte: [About us - R-Ladies](https://rladies.org/about-us/), [Meetup R-Ladies São Paulo](https://www.meetup.com/R-Ladies-Sao-Paulo/)
 
 ---
-class:   center, middle
-## Para quem?
+class:   
+# Para quem?
 
 Nosso principal público-alvo são as pessoas que se identificam com o gênero feminino, portanto, mulheres cis, mulheres trans, bem como pessoas não-binárias e queer.
 
@@ -94,12 +108,17 @@ Nosso principal público-alvo são as pessoas que se identificam com o gênero f
 Como uma iniciativa de diversidade, a missão das R-Ladies é alcançar uma representação proporcional de pessoas de gêneros atualmente sub-representados na comunidade R, incentivando, inspirando e caacitando-as.
 
 
+## Código de conduta
+
+O R-Ladies dedica-se a proporcionar uma experiência livre de assédio para todas as pessoas partcicipantes, desta forma, não é tolerada nenhuma forma de assédio. [Código de conduta - R-Ladies](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese)
+
+
 
 Fonte: [About us - R-Ladies](https://rladies.org/about-us/), [Meetup R-Ladies São Paulo](https://www.meetup.com/R-Ladies-Sao-Paulo/)
 
 ---
-class:   center, middle
-## Como o R-Ladies começou?
+class:   
+# Como o R-Ladies começou?
 ```{r echo=FALSE, fig.align='center', out.width="20%"}
 knitr::include_graphics("https://raw.githubusercontent.com/beatrizmilz/IV-SER-RLadies/master/docs/img/gabriela.jpeg")
 ```
@@ -110,39 +129,38 @@ knitr::include_graphics("https://raw.githubusercontent.com/beatrizmilz/IV-SER-RL
 Fonte: [About us - R-Ladies](https://rladies.org/about-us/history/)
 
 ---
-class:   center, middle
-## Crescimento da R-Ladies no mundo
+class:   
 
+# Crescimento da R-Ladies no mundo
+
+
+<br>
+<br>
 ```{r echo=FALSE, fig.align='center', out.width="100%"}
 knitr::include_graphics("img/cumulative-growth-of-chapters.png")
 ```
 
 Atualizado em: Dezembro/2019. Fonte: [R Community Explorer](https://benubah.github.io/r-community-explorer/rladies.html) 
 ---
-class:center, middle
+class:
 
-## Comunidade da R-Ladies - Capítulos no mundo
+# R-Ladies - Capítulos no mundo
+
+<br>
+<br>
 ```{r echo=FALSE, out.width="100%"}
 knitr::include_graphics("img/r-ladies-community.PNG")
 ```
 
 Atualizado em: Dezembro/2019. Fonte: [R Community Explorer](https://benubah.github.io/r-community-explorer/rladies.html) 
 
----
-class:   center, middle
-
-## Código de conduta
-O R-Ladies dedica-se a proporcionar uma experiência livre de assédio para todas as pessoas partcicipantes, desta forma, não é tolerada nenhuma forma de assédio.
-
-
-[Código de conduta - R-Ladies](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese)
 
 
 
 ---
-class: middle
+class: 
 
-## R-Ladies no Brasil
+# R-Ladies no Brasil
 
 ```{r eval=FALSE, include=FALSE}
 url <- "https://benubah.github.io/r-community-explorer/data/rladies.csv"
@@ -169,14 +187,14 @@ rladies %>%
   dplyr::select(-X1,-city,-region,-fullurl,-country, -created) %>%
   knitr::kable() %>%
   kableExtra::kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = TRUE) %>%
-  kableExtra::scroll_box(width = "100%", height = "370px")
+  kableExtra::scroll_box(width = "100%", height = "85%")
 ```
 ---
-class: middle
+class: 
 
-## R-Ladies em São Paulo
+# R-Ladies em São Paulo
 
-```{r out.width="50%"}
+```{r out.width="65%"}
 knitr::include_graphics("img/1meetupsp.jpeg")
 ```
 - **Primeiro encontro R-Ladies São Paulo ** - Agosto/2018
@@ -184,27 +202,28 @@ knitr::include_graphics("img/1meetupsp.jpeg")
 - **~600 membros** - Dezembro/2019 
 
 ---
-class: middle
-## Atividades
+class: 
+# Atividades
 
 - Já realizamos 15 encontros, incluindo:
   - Meetups, 
   - Workshops, 
-  - Datathons.
+  - Datathons 
+  
+**+ encontros planejados mensalmente!**
 
-
-```{r out.width="40%"}
+```{r out.width="55%"}
 knitr::include_graphics("img/foto_loggi.jpeg")
 ```
 
-**+ encontros planejados mensalmente!**
+
 
 ---
-class: middle
+class: 
 
-## Atividades
-
-### Focado em alguns pacotes:
+# Atividades
+<br>
+## Focado em alguns pacotes:
 - Conhecendo o `tidyverse` e os pacotes `dplyr`, `ggplot2`, `rmarkdown`
 - Trabalhando com strings com `stringr`
 - Apresentações com `xaringan`
@@ -217,11 +236,11 @@ knitr::include_graphics(c("img/rlogos/hex-tidyverse.jpg","img/rlogos/hex-dplyr.p
 ```
 
 ---
-class: middle
+class: 
 
-## Atividades
-
-### Focada em casos:
+# Atividades
+<br>
+## Focada em casos:
 
 - Explorando dados abertos
 - Extraindo dados do Google Analytics
@@ -230,8 +249,8 @@ class: middle
 
 
 ---
-class: middle
-## Atividades com outros capítulos R-Ladies
+class: 
+# Atividades com outros capítulos
 .pull-left[
 - Workshop na R-Ladies Niterói (Maio/2019).
 
@@ -254,20 +273,24 @@ knitr::include_graphics("img/rladiesrecife.PNG")
 
 
 ---
-class: middle
+class: 
 
-## Colaborações
+# Colaborações
 
 - Também colaboramos em outros projetos:
   - Aulas, Workshops...
   - Sempre abertas para a comunidade. 
 
-Ex: Amostra de Estatística do IME 2019- 2 Workshops oferecidos pelas R-Ladies
+Ex: [14ª aMostra Estatística 2019 - IME/USP](https://www.ime.usp.br/~amostra/) - 2 Workshops oferecidos pelas R-Ladies
+
+```{r out.width="55%"}
+knitr::include_graphics("img/ime-datavis.jpg")
+```
 ---
-class: middle
+class: 
 
-## Pontos importantes:
-
+# Pontos importantes:
+<BR>
 - O grupo oferece um ambiente seguro para pessoas interessadas em `R`, e todas as pessoas devem seguir o código de conduta: [https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese)
 
 - As palestras e conteúdos apresentados são disponibilizados gratuitamente no GitHub: 
@@ -280,13 +303,21 @@ class: middle
 
 
 
+---
+class:  
 
+# The Carpentries 
 
+<br><br><br><br>
+
+```{r out.width="100%"}
+knitr::include_graphics("img/TheCarpentries.svg")
+```
 
 ---
-class:  middle
+class:  
 
-## The Carpentries 
+# The Carpentries 
 
 - Comunidade global que desenvolve e realiza workshops sobre habilidades de programação (principalmente ciência de dados).
 
@@ -299,9 +330,9 @@ class:  middle
 - Patrocinadores: [disponível aqui](https://carpentries.org/supporters/). Ex: RConsortium, RStudio, entre outros.
 
 ---
-class:  middle
+class:  
 
-## The Carpentries
+# The Carpentries
 
 - **Visão**: Nossa visão é ser a **comunidade inclusiva** líder em ensino de dados e habilidades de programação.
 
@@ -310,7 +341,7 @@ class:  middle
 Fonte: https://carpentries.org/about/
 
 ---
-class:  middle
+class:  
 
 # The Carpentries e R
 
@@ -350,7 +381,7 @@ knitr::include_graphics(c("img/dc.svg", "img/swc.svg", "img/lc.svg"))
 ]
 
 ---
-class:  middle
+class:  
 
 # Instrutores - Mundo
 
@@ -360,7 +391,7 @@ knitr::include_graphics("img/instrutores-mundo.PNG")
 
 Fonte: https://carpentries.org/instructors-map/
 ---
-class:  middle
+class:  
 
 # Instrutores - Brasil
 
@@ -371,9 +402,9 @@ knitr::include_graphics("img/instrutores-br.PNG")
 Fonte: https://carpentries.org/instructors-map/
 
 ---
-class:  middle
+class:  
 
-## Treinamento de instrutores
+# Treinamento de instrutores
 
 1. [Preencher o formulário de interesse](https://amy.carpentries.org/forms/request_training/)
 
@@ -395,9 +426,9 @@ class:  middle
 - Estou devendo um post sobre isso! Mas posso tirar dúvidas.
 
 ---
-class: middle
+class: 
 
-## Desafios para a comunidade brasileira
+# Desafios para a comunidade BR
 
 
 - Treinamento de instrutores/as é em inglês
@@ -411,9 +442,92 @@ class: middle
 + Instrutores - + Workshops, + Equipe para traduzir, eventualmente equipe de treinamento de instrutores em português
 ```
 
+
 ---
-class: middle
-## Conclusão
+class: 
+
+# satRday
+
+
+```{r echo=FALSE, out.width="50%", fig.align='center'}
+knitr::include_graphics("img/satrdaysp.png")
+```
+---
+class: 
+
+# satRday
+
+.pull-left[
+
+
+</br>
+<img src ="img/placeholder.png" width = "90%"></img>
+
+]
+
+.pull-right[
+
++ O satRday é uma conferência focada em R, __a principal linguagem de código aberto__ de Ciência de Dados.
+
++ satRday é um __evento internacional__ que foi lançado em 2016.
+
++ O satRday foi patrocinado pela __RConsortium__, um projeto de código aberto da Linux Foundation que dá suporte à comunidade internacional de R.
+
++ Os eventos são sempre organizados com o envolvimento da comunidade local.
+]
+
+---
+class:
+
+# Código de conduta
+
+- O satRdays tem como objetivo proporcionar uma experiência de conferência livre de assédio e inclusiva para todos os participantes, independente, mas não limitado a, gênero, orientação sexual, deficiência, aparência física, idade, raça/etnia, posição social, religião ou afiliação política. 
+
+- Não toleramos nenhuma forma de assédio aos participantes (incluindo organizadores e fornecedores). 
+
+- Imagens e insinuações sexuais não são apropriadas em nenhum local da conferência, incluindo apresentações. 
+
+
+- Qualquer pessoa que viole estas regras pode ser advertida ou expulsa da conferência (sem reembolso), conforme critérios dos organizadores da conferência. 
+
+Saiba mais em: https://saopaulo2019.satrdays.org/codigodeconduta/
+
+---
+class: center
+
+# Equipe organizadora 
+
+## satRday SP 2019
+
+```{r echo=FALSE, fig.align='default', out.width="16%"}
+knitr::include_graphics(c("img/team/adrianareis.jpg", 
+                          "img/team/angelica.jpg",
+                          "img/team/beamilz.jpg",
+                          "img/team/brunaw.jpg",
+                          "img/team/clente.jpg",
+                          "img/team/danielfalbel.jpg",
+                          "img/team/fernandafortti.jpg", 
+                          "img/team/gabrielacaesar.jpg",
+                           "img/team/gabrielz.jpg",
+                          "img/team/josejesus.jpg",
+                          "img/team/juliotrecenti.jpg",
+                          "img/team/leticiathomaz.jpg",
+                          "img/team/mariguilardi.jpg",
+                          "img/team/nathdemetrio.jpg",
+                          "img/team/renatahirota.jpg",
+                          "img/team/william.jpg"))
+```
+
+
+
+
+
+
+
+
+---
+class: 
+# Conclusão
 
 - The increasing popularity of the R-Ladies São Paulo shows us how important it is to support it, 
 
@@ -421,11 +535,15 @@ class: middle
 
 - It helps to increase the strength of the Brazilian R community and the inclusion of underrepresented groups. 
 
+- Importância do código de conduta!
+
 
 ---
-class:   middle
+class:   
 
-## Como saber mais? R-Ladies
+# Como saber mais? 
+
+## R-Ladies
   - Website RLadies Global: [https://rladies.org/](https://rladies.org/)
   - Twitter: [@RLadiesGlobal](https://twitter.com/rladiesglobal), [@RLadiesSaoPaulo](https://twitter.com/RLadiesSaoPaulo)
   - Instagram: [@RLadiesSaoPaulo](http://instagram.com/RLadiesSaoPaulo)
@@ -433,12 +551,14 @@ class:   middle
   - MeetUp: [https://www.meetup.com/pt-BR/R-Ladies-Sao-Paulo](https://www.meetup.com/pt-BR/R-Ladies-Sao-Paulo)
   - Github: [https://github.com/rladies/meetup-presentations_sao-paulo](https://github.com/rladies/meetup-presentations_sao-paulo)
   - R-Ladies LATAM Blog (Latin America) - Em breve!
-### Não tem capítulo na sua cidade e quer iniciar um?
-<center> Saiba como em <a href="https://rladies.org/about-us/help/"> R-Ladies - How do get involved </a> </center>
+  - Não tem capítulo na sua cidade e quer iniciar um?  Saiba como em <a href="https://rladies.org/about-us/help/"> R-Ladies - How do get involved </a> 
 ---
-class: middle  
+class:   
 
-## Como saber mais? The Carpentries 
+# Como saber mais? 
+
+
+##  The Carpentries 
 
 - [Website](https://carpentries.org/)
 - [Twitter](https://twitter.com/thecarpentries)
@@ -446,13 +566,13 @@ class: middle
 - [LinkedIn](https://www.linkedin.com/company/the-carpentries/)
 - [Slack](https://swc-slack-invite.herokuapp.com/)
 
-## Como saber mais? satRday
+##  satRday
 
 - [satRdays Global](https://satrdays.org/)
 - [Base de conhecimento](https://knowledgebase.satrdays.org/)
 - satRday Sao Paulo 2019 - [Site do evento](https://saopaulo2019.satrdays.org/) e [Apresentações](https://github.com/satRdays/saopaulo2019_slides)
 ---
-class: middle  
+class:   
 
 # Agradecimentos
 
@@ -471,4 +591,4 @@ knitr::include_graphics("https://media1.giphy.com/media/3oz8xIsloV7zOmt81G/giphy
   - Linkedin: <a href="https://www.linkedin.com/in/beatrizmilz">Beatriz Milz</a>
 
 
-- Apresentação feita com [Xaringan](https://github.com/yihui/xaringan).
+- Apresentação feita com [Xaringan](https://github.com/yihui/xaringan), com o tema `metropolis` modificado.
