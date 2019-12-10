@@ -13,3 +13,9 @@ div.my-footer span {
   left: 15px;
   bottom: 12px;
 }
+
+div.my-footer a {
+  font-weight: bold;
+  color: #FFFFFF;
+
+}

@@ -1,6 +1,6 @@
 ---
 title: "<center><img src= 'img/allisonhorst/community1.jpg' width = '30%' alt='Author: Allison Horst'></br><p>Imagem por <a href='https://twitter.com/allison_horst' target=_blank>@allison_horst</a></p></center> "
-subtitle: "R-Ladies, Comunidades R e a importância das iniciativas de diversidade"
+subtitle: "R-Ladies, Comunidades e a importância das iniciativas de diversidade"
 author: "Beatriz Milz<br> 2º R Day · UFPR · Curitiba · Paraná </br> 13/12/2019"
 output:
   xaringan::moon_reader:
@@ -13,7 +13,7 @@ layout: true
   
 <div class="my-footer"><span>
 
-Twitter: twitter.com/BeaMilz | beatriz.milz@usp.br | Apresentação em: bit.ly/...
+Twitter: <a href='https://twitter.com/BeaMilz'>@BeaMilz</a> | <a href='mailto:beatriz.milz@usp.br'>beatriz.milz@usp.br</a> | <a href='https://beatrizmilz.github.io/resume/resume.pdf'> Currículo </a> | Apresentação em: bit.ly/...
 
 
 </span></div> 
@@ -44,6 +44,27 @@ knitr::include_graphics("img/logos_bia.png")
 - Co-organizadora - [R-Ladies São Paulo](https://www.meetup.com/pt-BR/R-Ladies-Sao-Paulo) `r emo::ji("purple_heart")` e [satRday SP](https://saopaulo2019.satrdays.org/); Instrutora - [The Carpentries](https://carpentries.org/instructors/)
 
 - Anteriormente: Mestre em Ciências - UNIFESP; Bacharel em Gestão Ambiental - EACH/USP
+
+---
+class: middle  
+
+## 
+
+- Ponto de vista: contexto de São Paulo
+
+- Comunidades:
+
+  - R-Ladies
+
+  - The Carpentries
+  
+  - satRday
+  
+  -  
+
+
+
+
 
 ---
 class:  center, middle
@@ -112,6 +133,8 @@ class:   center, middle
 
 ## Código de conduta
 O R-Ladies dedica-se a proporcionar uma experiência livre de assédio para todas as pessoas partcicipantes, desta forma, não é tolerada nenhuma forma de assédio.
+
+
 [Código de conduta - R-Ladies](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese)
 
 
@@ -162,112 +185,102 @@ knitr::include_graphics("img/1meetupsp.jpeg")
 
 ---
 class: middle
-## Activities
+## Atividades
 
-- Already held 10 events, including:
-  - meetups, 
-  - workshops, 
-  - datathons.
+- Já realizamos 15 encontros, incluindo:
+  - Meetups, 
+  - Workshops, 
+  - Datathons.
 
 
 ```{r out.width="40%"}
 knitr::include_graphics("img/foto_loggi.jpeg")
 ```
 
-**+meetings are monthly being planned!**
+**+ encontros planejados mensalmente!**
 
 ---
 class: middle
 
-## Activities
+## Atividades
 
-###Content - Focused on some packages:
-- Learning `dplyr`, `ggplot2`, `rmarkdown`
-- Dealing with strings with `stringr`
-- Presentations with `xaringan`
-- Functional Programming with `purrr`
+### Focado em alguns pacotes:
+- Conhecendo o `tidyverse` e os pacotes `dplyr`, `ggplot2`, `rmarkdown`
+- Trabalhando com strings com `stringr`
+- Apresentações com `xaringan`
+- Programação funcional com `purrr`
+- Usando o GitHub através do RStudio com o pacote `usethis`
+- Entre outros :)
 
-```{r out.width="14%", fig.align = "default"}
-knitr::include_graphics(c("img/rlogos/hex-tidyverse.jpg","img/rlogos/hex-dplyr.png","img/rlogos/hex-stringr.png", "img/rlogos/hex-ggplot2.png", "img/rlogos/hex-purrr.jpg", "img/rlogos/hex-rmarkdown.png", "img/rlogos/hex-xaringan.png"))
+```{r out.width="12%", fig.align = "default"}
+knitr::include_graphics(c("img/rlogos/hex-tidyverse.jpg","img/rlogos/hex-dplyr.png","img/rlogos/hex-stringr.png", "img/rlogos/hex-ggplot2.png", "img/rlogos/hex-purrr.jpg", "img/rlogos/hex-rmarkdown.png", "img/rlogos/hex-xaringan.png", "img/rlogos/hex-usethis.png"))
 ```
 
 ---
 class: middle
 
-## Activities
+## Atividades
 
-###Content - Focused on case presentations:
+### Focada em casos:
 
-- Exploring Open Data
-- Google Analytics Data extraction
-- News article with electoral data
-- Economics and Transportation DataViz
+- Explorando dados abertos
+- Extraindo dados do Google Analytics
+- Explorando dados eleitorais
+- Visualização de dados econômicos e de transporte
+
+
+---
+class: middle
+## Atividades com outros capítulos R-Ladies
+.pull-left[
+- Workshop na R-Ladies Niterói (Maio/2019).
 
 ```{r out.width="100%"}
-knitr::include_graphics("img/Rplot-highchart.png")
-```
-
-
----
-class: middle
-## Activities: partnership with other chapters
-
-- Workshop with R-Ladies Niterói (May/2019).
-
-```{r out.width="70%"}
 knitr::include_graphics("img/rladiesniteroi.jpeg")
 ```
+]
+
+.pull-right[
+- Palestra na R-Ladies Recife (Setembro/2019).
+
+```{r out.width="100%"}
+knitr::include_graphics("img/rladiesrecife.PNG")
+```
+]
+
+
+
+
+
+
 ---
 class: middle
 
-## Collaboration
+## Colaborações
 
-- We also collaborate with other projects:
-  - lectures, workshops,
-  - always open to the community.  
+- Também colaboramos em outros projetos:
+  - Aulas, Workshops...
+  - Sempre abertas para a comunidade. 
 
-
+Ex: Amostra de Estatística do IME 2019- 2 Workshops oferecidos pelas R-Ladies
 ---
 class: middle
 
-## Important points!
+## Pontos importantes:
 
-- The group provides a safe environment for people interested in `R`. 
-   - Code of conduct: [https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese)
+- O grupo oferece um ambiente seguro para pessoas interessadas em `R`, e todas as pessoas devem seguir o código de conduta: [https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese)
 
-- All of the content presented is made available freely on github in portuguese:
-
+- As palestras e conteúdos apresentados são disponibilizados gratuitamente no GitHub: 
    - [https://github.com/rladies/meetup-presentations_sao-paulo](https://github.com/rladies/meetup-presentations_sao-paulo)
 
-- **All of the activities are free to attend**
-
-  - The gratuity is very relevant in the Brazilian context:
-  the few `R` courses available in Portuguese are often expensive, and there is no other active `R` group in São Paulo (the biggest city in Brazil!) that provides this type of content free of charge.
-
----
-class: middle
-## Conclusion
-
-- The increasing popularity of the R-Ladies São Paulo shows us how important it is to support it, 
-
-- It can be the key to motivate the creation of other chapters in Brazil, 
-
-- It helps to increase the strength of the Brazilian R community and the inclusion of underrepresented groups. 
+- **Todas as atividades são gratuitas**
 
 
----
-class:   middle
 
-## Como saber mais?
-  - Website RLadies Global: [https://rladies.org/](https://rladies.org/)
-  - Twitter: [@RLadiesGlobal](https://twitter.com/rladiesglobal), [@RLadiesSaoPaulo](https://twitter.com/RLadiesSaoPaulo)
-  - Instagram: [@RLadiesSaoPaulo](http://instagram.com/RLadiesSaoPaulo)
-  - Facebook: [@RLadiesSaoPaulo](http://facebook.com/RLadiesSaoPaulo)
-  - MeetUp: [https://www.meetup.com/pt-BR/R-Ladies-Sao-Paulo](https://www.meetup.com/pt-BR/R-Ladies-Sao-Paulo)
-  - Github: [https://github.com/rladies/meetup-presentations_sao-paulo](https://github.com/rladies/meetup-presentations_sao-paulo)
-  - R-Ladies LATAM Blog (Latin America) - Em breve!
-### Não tem capítulo na sua cidade e quer iniciar um?
-<center> Saiba como em <a href="https://rladies.org/about-us/help/"> R-Ladies - How do get involved </a> </center>
+
+
+
+
 
 
 ---
@@ -398,8 +411,46 @@ class: middle
 + Instrutores - + Workshops, + Equipe para traduzir, eventualmente equipe de treinamento de instrutores em português
 ```
 
+---
+class: middle
+## Conclusão
+
+- The increasing popularity of the R-Ladies São Paulo shows us how important it is to support it, 
+
+- It can be the key to motivate the creation of other chapters in Brazil, 
+
+- It helps to increase the strength of the Brazilian R community and the inclusion of underrepresented groups. 
 
 
+---
+class:   middle
+
+## Como saber mais? R-Ladies
+  - Website RLadies Global: [https://rladies.org/](https://rladies.org/)
+  - Twitter: [@RLadiesGlobal](https://twitter.com/rladiesglobal), [@RLadiesSaoPaulo](https://twitter.com/RLadiesSaoPaulo)
+  - Instagram: [@RLadiesSaoPaulo](http://instagram.com/RLadiesSaoPaulo)
+  - Facebook: [@RLadiesSaoPaulo](http://facebook.com/RLadiesSaoPaulo)
+  - MeetUp: [https://www.meetup.com/pt-BR/R-Ladies-Sao-Paulo](https://www.meetup.com/pt-BR/R-Ladies-Sao-Paulo)
+  - Github: [https://github.com/rladies/meetup-presentations_sao-paulo](https://github.com/rladies/meetup-presentations_sao-paulo)
+  - R-Ladies LATAM Blog (Latin America) - Em breve!
+### Não tem capítulo na sua cidade e quer iniciar um?
+<center> Saiba como em <a href="https://rladies.org/about-us/help/"> R-Ladies - How do get involved </a> </center>
+---
+class: middle  
+
+## Como saber mais? The Carpentries 
+
+- [Website](https://carpentries.org/)
+- [Twitter](https://twitter.com/thecarpentries)
+- [Facebook](https://www.facebook.com/carpentries/)
+- [LinkedIn](https://www.linkedin.com/company/the-carpentries/)
+- [Slack](https://swc-slack-invite.herokuapp.com/)
+
+## Como saber mais? satRday
+
+- [satRdays Global](https://satrdays.org/)
+- [Base de conhecimento](https://knowledgebase.satrdays.org/)
+- satRday Sao Paulo 2019 - [Site do evento](https://saopaulo2019.satrdays.org/) e [Apresentações](https://github.com/satRdays/saopaulo2019_slides)
 ---
 class: middle  
 
@@ -409,6 +460,8 @@ class: middle
 knitr::include_graphics("https://media1.giphy.com/media/3oz8xIsloV7zOmt81G/giphy.gif")
 ```
 
+- Comissão Organizadora II RDay, Bruna Wundervald, Nathália Demétrio
+
 - **Contato**:
 
   - Email: <a href="mailto:beatriz.milz@usp.br">beatriz.milz@usp.br</a>
@@ -416,10 +469,6 @@ knitr::include_graphics("https://media1.giphy.com/media/3oz8xIsloV7zOmt81G/giphy
   - Github: <a href="http://github.com/beatrizmilz">@beatrizmilz</a>
   - Twitter: <a href="http://twitter.com/beatrizmilz">@BeaMilz</a> 
   - Linkedin: <a href="https://www.linkedin.com/in/beatrizmilz">Beatriz Milz</a>
-
-
-- The Carpentries - [Website](https://carpentries.org/), [Twitter](https://twitter.com/thecarpentries), [Facebook](https://www.facebook.com/carpentries/), [LinkedIn](https://www.linkedin.com/company/the-carpentries/), [Slack](https://swc-slack-invite.herokuapp.com/)
-
 
 
 - Apresentação feita com [Xaringan](https://github.com/yihui/xaringan).
